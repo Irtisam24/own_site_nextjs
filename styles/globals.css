@@ -1,16 +1,250 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/* INDEX PAGE STYLES */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Variables */
+:root {
+  --darkBrown: #372c2c;
+  --silver: #b5b3b8;
+  --darkRed: #8a372c;
+  --yellowGolden: #f0d1ab;
+}
+/* General Utility Classes */
+
+.hideScrollBar {
+  overflow-y: hidden;
+}
+.outlinedDarkRedButton {
+  margin-top: 5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid var(--darkRed);
+  color: var(--darkRed);
+  padding: 3px 5px;
+  max-width: 100%;
+  width: 20vw;
+  height: 5vh;
+  transition: all 0.6s ease-in-out;
+}
+.outlinedDarkRedButton:hover,
+.outlinedDarkRedButton:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--darkRed);
+  color: var(--yellowGolden);
+}
+.outlinedYellowGoldenButton {
+  margin-top: 5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid var(--yellowGolden);
+  color: var(--yellowGolden);
+  padding: 3px 5px;
+  max-width: 100%;
+  width: 20vw;
+  height: 5vh;
+  transition: all 0.6s ease-in-out;
+}
+.outlinedYellowGoldenButton:hover,
+.outlinedYellowGoldenButton:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--yellowGolden);
+  color: var(--darkRed);
+}
+
+/* Animation Related Classes */
+/* .animated-col-delay {
+  animate-duration: 5ms;
+} */
+
+/* XXX ANIMATION RELATED CLASESS  END XXX */
+.bgHero {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  font-size: 6vw;
+  white-space: pre;
+  text-shadow: 0 0 2px transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: burlywood;
+}
+.description {
+  font-size: 4vh;
+  text-transform: uppercase;
+  margin-top: -10px;
+  color: burlywood;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.leftside,
+.rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+}
+.nomargin {
+  margin-left: 0;
+  margin-right: 0;
+}
+.nopadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.leftside {
+  background-color: #f1d1ab;
+  color: var(--darkRed);
+}
+.pfont {
+  font-size: 3vh;
+}
+.headingfont {
+  font-size: 5vh;
+}
+.descriptionfont {
+  font-size: 3vh;
+}
+
+.rightside {
+  background-color: #8a382c;
+}
+
+.graphicdesigner {
+  text-transform: capitalize;
+}
+.webdeveloper {
+  color: var(--yellowGolden);
+}
+
+/* SIDE BAR STYLES */
+/* ------------CSS FOR SIDEBAR -------------------------*/
+.pagesection {
+  display: flex;
+}
+.headingfordesigner {
+  color: rgb(218, 218, 155);
+  writing-mode: vertical-lr;
+  word-spacing: 4px;
+  transform: rotate(180deg);
+  font-family: "Encode Sans SC", sans-serif;
+  display: flex;
+}
+.icon {
+  color: rgb(218, 218, 155);
+}
+.sidebar {
+  position: fixed;
+  background-color: white;
+  width: 7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.sidebar:hover {
+  width: 9%;
+}
+.sidebar:hover .bluricon {
+  opacity: 1;
+  height: auto;
+}
+.sidebar:hover .arrowicon {
+  opacity: 1;
+  height: auto;
+}
+.sidebar-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrowicon {
+  padding-left: 10px;
+  transition: opacity 6s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex !important;
+}
+.bluricon {
+  transition: opacity 6s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex !important;
+}
+
+/* ---------------CSS END FOR SIDEBAR------------------- */
+
+/* DEVELOPER PAGE STYLES */
+.whole-section {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(22, 21, 21);
+  padding-top: 1rem;
+}
+.header-section {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.dpsection {
+  display: flex;
+}
+.custom-button {
+  margin-left: 20px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+}
+.icon {
+  color: white;
+}
+.content-section {
+  margin-left: 7%;
+  margin-top: 10vh;
+}
+.content-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(218, 218, 155);
+}
+.content-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: rgb(218, 218, 155);
+  text-align: justify;
 }
