@@ -16,33 +16,35 @@
   overflow-y: hidden;
 }
 .outlinedDarkRedButton {
-  margin-top: 5rem;
+  margin-top: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.3rem solid var(--darkRed);
-  color: var(--darkRed);
-  padding: 3px 5px;
+  border: 0.4rem solid var(--darkBrown);
+  color: var(--darkBrown);
+  padding: 5px 5px;
   max-width: 100%;
   width: 20vw;
   height: 5vh;
+  font-weight: 600;
   transition: all 0.6s ease-in-out;
 }
 .outlinedDarkRedButton:hover,
 .outlinedDarkRedButton:focus {
-  box-shadow: inset 0 -3.25em 0 0 var(--darkRed);
+  box-shadow: inset 0 -3.25em 0 0 var(--darkBrown);
   color: var(--yellowGolden);
 }
 .outlinedYellowGoldenButton {
-  margin-top: 5rem;
+  margin-top: 1rem;
   cursor: pointer;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.3rem solid var(--yellowGolden);
+  border: 0.4rem solid var(--yellowGolden);
   color: var(--yellowGolden);
-  padding: 3px 5px;
+  padding: 5px 5px;
   max-width: 100%;
   width: 20vw;
   height: 5vh;
@@ -54,6 +56,12 @@
   color: var(--darkRed);
 }
 
+.outlinedHeading {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--yellowGolden);
+}
+
 /* Animation Related Classes */
 /* .animated-col-delay {
   animate-duration: 5ms;
@@ -61,7 +69,7 @@
 
 /* XXX ANIMATION RELATED CLASESS  END XXX */
 .bgHero {
-  background-image: url("/images/background.jpg");
+  background-color: var(--darkBrown);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -73,20 +81,37 @@
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+.sectionHero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 2rem;
+}
 
 .header {
-  font-size: 6vw;
+  font-size: 3rem;
   white-space: pre;
   text-shadow: 0 0 2px transparent;
   font-weight: 700;
   text-transform: uppercase;
   color: burlywood;
 }
-.description {
-  font-size: 4vh;
-  text-transform: uppercase;
-  margin-top: -10px;
-  color: burlywood;
+.descriptionText {
+  font-size: 1.3rem;
+  color: var(--silver);
+}
+
+.smallText{
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--silver);
+}
+
+.customIcon{
+  color: white;
 }
 
 /* //// Default effect: Slide from Top  //// */
@@ -101,6 +126,15 @@
   height: 100vh;
   width: 100%;
   font-family: "Roboto Slab", serif;
+  position: relative;
+}
+.dInLeft{
+  font-size: 3rem;
+  color: #b5b3b8;
+  position: absolute;
+  opacity: 1;
+  top: 100%;
+  left: 50%;
 }
 .nomargin {
   margin-left: 0;
@@ -111,28 +145,40 @@
   padding-right: 0 !important;
 }
 .leftside {
-  background-color: #f1d1ab;
-  color: var(--darkRed);
+  background-color: var(--darkBrown);
+  color: var(--yellowGolden);
 }
 .pfont {
-  font-size: 3vh;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 .headingfont {
-  font-size: 5vh;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 .descriptionfont {
-  font-size: 3vh;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: var(--silver);
+}
+.descriptionfontBrown {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: var(--darkBrown);
 }
 
 .rightside {
-  background-color: #8a382c;
+  background-color: var(--yellowGolden);
 }
 
 .graphicdesigner {
   text-transform: capitalize;
 }
 .webdeveloper {
-  color: var(--yellowGolden);
+  color: var(--darkBrown);
 }
 
 /* SIDE BAR STYLES */

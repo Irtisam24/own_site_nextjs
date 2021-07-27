@@ -13,18 +13,24 @@ const LandingPageNextMainSection = () => {
             className="nopadding animated-col-delay animate__animated animate__fadeInUp "
           >
             <div className="leftside">
+            <div className='dInLeft'>D</div>
+            <div className='eInLeft'>E</div>
+            <div className='sInLeft'>S</div>
+            <div className='iInLeft'>I</div>
+            <div className='gInLeft'>G</div>
+            <div className='nInLeft'>N</div>
+            <div className='sLastInLeft'>S</div>
               <div className="graphicdesigner">
-                <p className="pfont">I AM</p>
-                <h1 className="headingfont"> GRAPHIC DESIGNER</h1>
-                <h4 className="descriptionfont">
-                  I want to build the impossible
-                </h4>
+                <p className="pfont">Our</p>  
+                <h1 className="headingfont"> Designs</h1>
+                <p className="descriptionfont">
+                  We Design the impossible
+                </p>
                 <CustomOutlinedButton
                   buttonText="DISCOVER MORE"
                   onClick={() => {
                     console.log("hit");
                   }}
-                  buttonType="darkRed"
                 />
               </div>
             </div>
@@ -35,10 +41,10 @@ const LandingPageNextMainSection = () => {
           >
             <div className="rightside">
               <div className="webdeveloper">
-                <p className="pfont">I AM</p>
-                <h1 className="headingfont"> WEB DEVELOPER</h1>
-                <h4 className="descriptionfont">
-                  I want to build the impossible
+                <p className="pfont">Our</p>
+                <h1 className="headingfont"> Projects</h1>
+                <h4 className="descriptionfontBrown">
+                  We Build the Impossible
                 </h4>
               </div>
                 <Link href="/developerPage">
@@ -47,6 +53,7 @@ const LandingPageNextMainSection = () => {
                     onClick={() => {
                       console.log("hit");
                     }}
+                    buttonType="darkRed"
                   />
                 </Link>
             </div>
