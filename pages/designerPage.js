@@ -9,27 +9,32 @@ import wordpressImageThree from "../public/images/work3.PNG";
 import wordpressImageFour from "../public/images/cap1.PNG";
 import { Container } from "reactstrap";
 
-export default function DeveloperPage() {
+export default function DesignerPage() {
   return (
     <>
       <Head>
-        <title>Developer Page</title>
+        <title>Designer Page</title>
       </Head>
       <div>
-        <Sidebar to="designerPage" heading="Switch to Designer" />
+        <Sidebar
+          to="/developerPage"
+          heading="Switch to Developer"
+          darkBrown={true}
+        />
       </div>
-      <div className="bgDarkBrown">
+      <div className="bgCream">
         <Container>
-          <Header />
+          <Header darkBrown={true} />
         </Container>
         <div>
           <Container>
             <DescriptionBlock
-              title="Wordpress Developer"
+              title="Graphics Designs"
               description="We have dedicated team of Wordpress developers who manage to meet client requirements with full functionalities and outstanding design"
-              darkBrown={false}
+              darkBrown={true}
             />
             <Slider
+              darkBrown={true}
               images={[
                 wordpressImageOne.src,
                 wordpressImageTwo.src,
