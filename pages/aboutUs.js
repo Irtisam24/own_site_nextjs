@@ -41,7 +41,7 @@ export default function AboutUs() {
         </Container>
       </div>
       <Reveal repeat>
-        <div className="aboutusreal2-section">
+        <div className="aboutusreal2-section hideScrollBar">
           <Tween from={{ y: 200, opacity: 0 }}>
             <div className="aboutusreal2-header">
               <Container fluid>
@@ -68,9 +68,12 @@ export default function AboutUs() {
                 md={{ size: 4, offset: 1 }}
                 className="d-flex align-items-center justify-content-center"
               >
+              <div className='contactButton'>
+
                 <Link href="/contactUs">
                   <CustomOutlinedButton buttonText="Contact Us" smallButton />
                 </Link>
+              </div>
               </Col>
               <Col md="3">
                 <Tween from={{ y: 200, opacity: 0 }} delay={0.6}>
