@@ -23,6 +23,13 @@ const Slider = ({ images, darkBrown }) => {
   };
   const changeslide = (index) => {
     setactiveindex(index);
+    if (window.innerWidth <= 600) {
+      if (activeindex === length - 1) {
+        setactiveindex(0);
+      } else {
+        setactiveindex(activeindex + 1);
+      }
+    }
   };
 
   return (
@@ -35,7 +42,7 @@ const Slider = ({ images, darkBrown }) => {
                 activeindex === 0 ? images[length - 1] : images[activeindex - 1]
               }
               alt=""
-              className="image-style"
+              className="image-style responsive-style"
               onClick={() => prevslide()}
             />
           </Tween>
@@ -62,7 +69,7 @@ const Slider = ({ images, darkBrown }) => {
                 activeindex === length - 1 ? images[0] : images[activeindex + 1]
               }
               alt=""
-              className="image-style"
+              className="image-style responsive-style"
               onClick={() => nextslide()}
             />
           </Tween>

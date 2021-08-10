@@ -12,10 +12,10 @@ export default function CustomOutlinedButton({
           buttonType === "darkRed" && !smallButton
             ? "outlinedDarkRedButton"
             : buttonType === "darkRed" && smallButton
-            ? "outlinedDarkRedButtonSmall"
-            : smallButton
-            ? "outlinedYellowGoldenButtonSmall"
-            : "outlinedYellowGoldenButton"
+              ? "outlinedDarkRedButtonSmall"
+              : smallButton
+                ? "outlinedYellowGoldenButtonSmall"
+                : "outlinedYellowGoldenButton"
         }
       >
         {buttonText}

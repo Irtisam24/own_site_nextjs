@@ -206,6 +206,7 @@ export default function ContactUsPage() {
                   buttonType="darkRed"
                   onClick={handleSubmit}
                   buttonText="Submit"
+
                 />
               </div>
             </Form>
