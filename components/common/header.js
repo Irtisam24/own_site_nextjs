@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "reactstrap";
 import Image from "next/image";
 import Link from "next/link";
 import mainLogo from "../../public/images/mainLogo.png";

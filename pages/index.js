@@ -28,11 +28,11 @@ export default function Home() {
       <main className="hideScrollBar">
         <div
           onWheel={(e) => onMouseWheelHandler(e)}
-          className={mainSectionVisible ? "displayNone" : "displayInitial"}
+          className={mainSectionVisible ? "displayNoneResponsive" : "displayInitial"}
         >
           <LandingpageHero />
         </div>
-        <div className={mainSectionVisible ? "displayInitial" : "displayNone"}>
+        <div className={mainSectionVisible ? "displayInitial" : "displayNoneResponsive"}>
           <LandingPageNextMainSection />
         </div>
       </main>

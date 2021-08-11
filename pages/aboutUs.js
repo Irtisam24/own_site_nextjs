@@ -40,7 +40,7 @@ export default function AboutUs() {
           </Tween>
         </Container>
       </div>
-      <Reveal repeat>
+      <Reveal>
         <div className="aboutusreal2-section hideScrollBar">
           <Tween from={{ y: 200, opacity: 0 }}>
             <div className="aboutusreal2-header">
@@ -92,7 +92,7 @@ export default function AboutUs() {
       </Reveal>
       <div className="faq-section">
         <Container fluid>
-          <Reveal repeat>
+          <Reveal>
             <div className="faq-heading">
               <Tween from={{ x: -200, opacity: 0 }}>
                 <h1 className="faq-heading-text">FREQUENTLY ASKED QUESTIONS</h1>

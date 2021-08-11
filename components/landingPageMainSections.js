@@ -30,12 +30,9 @@ const LandingPageNextMainSection = () => {
                 <p className="pfont">Our</p>
                 <h1 className="headingfont"> Designs</h1>
                 <p className="descriptionfont">We Design the impossible</p>
-                <CustomOutlinedButton
-                  buttonText="DISCOVER MORE"
-                  onClick={() => {
-                    console.log("hit");
-                  }}
-                />
+                <Link href="/designerPage">
+                  <CustomOutlinedButton buttonText="DISCOVER MORE" />
+                </Link>
               </div>
             </div>
           </Col>
@@ -47,7 +44,7 @@ const LandingPageNextMainSection = () => {
             className="nopadding animated-col-delay animate__animated animate__fadeInDown"
           >
             <div className="rightside">
-            <div className="pInRight">P</div>
+              <div className="pInRight">P</div>
               <div className="rInRight">R</div>
               <div className="oInRight">O</div>
               <div className="jInRight">J</div>
@@ -66,9 +63,6 @@ const LandingPageNextMainSection = () => {
               <Link href="/developerPage">
                 <CustomOutlinedButton
                   buttonText="DISCOVER MODE"
-                  onClick={() => {
-                    console.log("hit");
-                  }}
                   buttonType="darkRed"
                 />
               </Link>

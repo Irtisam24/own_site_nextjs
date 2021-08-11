@@ -847,6 +847,7 @@
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  padding-bottom: 5rem;
 }
 .faq-heading {
   padding-top: 10%;
